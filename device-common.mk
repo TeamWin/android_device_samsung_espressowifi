@@ -44,7 +44,7 @@ PRODUCT_COPY_FILES += \
 
 # GPS
 # gps config appropriate for this device
-$(call inherit-product, device/common/gps/gps_us_supl.mk)
+$(call inherit-product-if-exists, device/common/gps/gps_us_supl.mk)
 
 PRODUCT_PACKAGES += \
     libgpsd-compat \
